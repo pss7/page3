@@ -8,7 +8,7 @@
     <meta name="Author" content="" />
     <meta name="viewport"
         content="width=device-width, height=device-height, initial-scale=1.0, minimum-scale=1.0, maximum-scale=2.0, user-scalable=yes">
-    <title>멤버십 해지 신청 안내_마이페이지</title>
+    <title>예약내역_마이페이지</title>
     <link rel="stylesheet" href="../css/fonts.css">
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/style.css">
@@ -62,46 +62,60 @@
 
         </header>
         <!-- //header -->
+
         <main>
             <div id="mypage_wrap">
                 <div class="my_page my_page2">
-                    <div class="membership_wrap">
+                    <div class="reservation_wrap">
                         <h1>
-                            해지신청
+                            예약내역
                         </h1>
 
-                        <h2>
-                            해지 신청 전 <br>
-                            확인하세요
-                        </h2>
+                        <ul class="com_tab">
+                            <li>
+                                <a href="#" class="active">회의실</a>
+                            </li>
+                            <li>
+                                <a href="#">좌석</a>
+                            </li>
+                            <li>
+                                <a href="#">초대</a>
+                            </li>
+                        </ul>
+                        <!-- //reservation_tab -->
 
-                        <p class="membership_text">
-                            프로모션 이용 중인 경우 <br>
-                            추후 재결제 시 중복 적용이 불가하며 <br>
-                            모든 데이터가 소멸되어 복구되지 않습니다.
-                        </p>
-                        <!-- //membership_text -->
+                        <div class="reservation_content_wrap">
 
-                        <div class="com_check_box">
-                            <input id="agree1" type="checkbox" class="blind">
-                            <label for="agree1" class="agree_text">
-                               멤버십 해지 및 환불내역 동의 <span class="color">(필수)</span>
-                            </label>
+                            <ul class="com_rayout_list1">
+                                <li>
+                                    <span>총 크레딧</span>
+                                    <em>
+                                        100.00
+                                    </em>
+                                </li>
+                                <li>
+                                    <span>잔여 크레딧</span>
+                                    <em>
+                                        40.00
+                                    </em>
+                                </li>
+                            </ul>
+                            <!-- //credit_list -->
+
+                            <div class="reservation_content_box">
+
+                                <p class="no_reservation">
+                                    회의실 예약내역이 없습니다.
+                                </p>
+
+                            </div>
+                            <!-- //reservation_content_box -->
+
                         </div>
-                        <!-- //com_check_box -->
-
-                        <div class="com_check_box">
-                            <input id="agree2" type="checkbox" class="blind">
-                            <label for="agree2">
-                                안내 사항을 모두 확인하였으며, 이에 동의합니다.
-                            </label>
-                        </div>
-                        <!-- //com_check_box -->
-
-                        <a href="#" class="com_btn2">다음</a>
+                        <!-- //reservation_content_wrap  -->
 
                     </div>
-                    <!-- //secession_wrap -->
+                    <!-- //reservation_wrap -->
 
                 </div>
                 <!-- //my_page2 -->
@@ -114,7 +128,6 @@
 
     </div>
     <!-- //wrap -->
-
 </body>
 
 </html>

@@ -12,6 +12,7 @@ body, input, textarea, select, button, table{font-family: 'NotoSansKR', sans-ser
 
 fieldset, img{border:0;}
 img{display: block;}
+button{border: 0; background-color: transparent;}
 
 body, div, p, ul, ol, li, dl, dd, dt, h1, h2, h3, h4, h5, h6, table, tr, th, td,
 form, select, textarea, fieldset, legend, figure, figcaption{margin: 0; padding: 0;}

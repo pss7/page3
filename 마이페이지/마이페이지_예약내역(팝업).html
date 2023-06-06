@@ -86,7 +86,7 @@
 
                         <div class="reservation_content_wrap">
 
-                            <ul class="com_rayout_list1">
+                            <ul class="credit_list">
                                 <li>
                                     <span>총 크레딧</span>
                                     <em>
@@ -100,7 +100,7 @@
                                     </em>
                                 </li>
                             </ul>
-                            <!-- //com_rayout_list1 -->
+                            <!-- //credit_list -->
 
                             <div class="reservation_content_box">
 
@@ -131,6 +131,30 @@
                                             <button class="close">
                                                 <span class="blind">삭제</span>
                                             </button>
+                                            <div class="popup2">
+                                                <p>
+                                                    예약을 <br>
+                                                    취소하시겠습니까?
+                                                </p>
+                                                <dl>
+                                                    <dt>공간정보</dt>
+                                                    <dd>강남점 2층, 회의실 2A</dd>
+                                                </dl>
+                                                <dl>
+                                                    <dt>방문일시</dt>
+                                                    <dd>2023-04-25(화) 00:00~24:00</dd>
+                                                </dl>
+                                                <dl>
+                                                    <dt>결제정보</dt>
+                                                    <dd>2 크레딧</dd>
+                                                </dl>
+                                                <a href="#" class="no_reservation_btn">
+                                                    예약취소
+                                                </a>
+                                                <button class="popup_close"><span class="blind">팝업닫기</span></button>
+                                            </div>
+                                            <!-- //popup2 -->
+
                                         </li>
                                         <li>
                                             <h2>
@@ -217,16 +241,11 @@
 
                                 </div>
                                 <!-- //reservation_list_box -->
-                                     
                             </div>
                             <!-- //reservation_content_box -->
 
                         </div>
                         <!-- //reservation_content_wrap  -->
-
-                        <span class="cancel">
-                            취소되었습니다.
-                        </span>
 
                     </div>
                     <!-- //reservation_wrap -->
@@ -242,6 +261,8 @@
 
     </div>
     <!-- //wrap -->
+
+    <div class="popup_bg"></div>
 
 </body>
 
