@@ -11,5 +11,18 @@ $(function () {
         }
     });
 
+    $('.com_check_box input + .agree_chk').click(function () {
+
+        if($('.com_btn2').hasClass('disabled')){
+            $('.com_btn2').removeClass('disabled');
+            $('.com_btn2').addClass('enable');
+
+        }else{
+            $('.com_btn2').addClass('disabled');
+            $('.com_btn2').removeClass('enable');
+        }
+   
+    });
+
 
 });
