@@ -38,6 +38,15 @@ $(function () {
         $('.membership_wrap p').fadeOut();
         $('.membership_wrap .membership_info').removeClass('active');
     });
+    $('.membership_wrap .com_select_box .com_select > a').click(function () {
+        if ($(this).hasClass('active')) {
+            $(this).removeClass('active');
+            $(this).next().slideUp();
+        } else {
+            $(this).addClass('active');
+            $(this).next().slideDown();
+        }
+    });
 
     /* 결제수단 변경 */
     $('.payment_method_list li a').click(function () {
