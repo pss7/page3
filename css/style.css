@@ -133,7 +133,10 @@ main #mypage_wrap section .info_text li::before{content: ''; position: absolute;
 
 @media (max-width: 576px){
 
-    #mypage_wrap .my_page2 h1{margin-bottom: 24px; height: 54px;  font-size: 26px; border-bottom: 1px solid #E6E8EB; }
+    #mypage_wrap .my_page2{max-width: none;}
+    #mypage_wrap .my_page2 .my_com_wrap1{border-bottom: 0;}
+    #mypage_wrap .my_page2 h1{position: relative; margin-bottom: 24px; height: 54px;  font-size: 26px; }
+    #mypage_wrap .my_page2 h1::before{content: ''; position: absolute; left:-100px; right: -100px; bottom: 0; border-bottom: 1px solid #E6E8EB; }
     .com_btn2{position: absolute; left:16px; right:16px; bottom: 44px;}
 
 }
@@ -149,19 +152,9 @@ main #mypage_wrap section .info_text li::before{content: ''; position: absolute;
 #mypage_wrap .pw_wrap .input_text_box:nth-of-type(2) input{margin-bottom: 8px;}
 #mypage_wrap .pw_wrap .input_text_box:nth-of-type(2){margin-bottom: 50px;}
 
-
 /* 회원탈퇴 */
 #mypage_wrap .secession_wrap .secession_text h2{margin-bottom: 16px; font-size: 24px; color: #000; font-weight: 700; line-height: 32px;}
 #mypage_wrap .secession_wrap .secession_text p{margin-bottom: 61px; font-size: 14px; line-height: 24px; color: #737373;}
-
-@media (max-width: 576px){
-
-
-
-
-
-}
-
 
 
 /* 멤버십 해지 */
@@ -178,6 +171,26 @@ main #mypage_wrap section .info_text li::before{content: ''; position: absolute;
 #mypage_wrap .membership_wrap .membership_list li a input:checked + label::after{display: block;}
 #mypage_wrap .membership_wrap .membership_info{position: relative; display: inline-block; margin-bottom:50px; padding-right: 23px;  font-size: 14px; font-weight: 500; line-height: 17px; color: #737373;}
 #mypage_wrap .membership_wrap .membership_info::after{content: ''; position: absolute; top: 1px; right:0; width: 18px; height: 18px; background: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='8.00098' cy='8' r='7.5' fill='%23BDBDBD'/%3E%3Cpath d='M7.87434 9.5C7.51542 9.5 7.22333 9.2083 7.22333 8.84986V8.79826C7.20679 8.47009 7.28326 7.65689 8.33591 7.1925C8.3428 7.18975 8.98762 6.8781 8.90357 6.30638C8.82986 5.80347 8.47714 5.5152 7.93703 5.5152H7.9143C7.43895 5.52277 7.07728 5.84956 7.00219 6.16122C6.9333 6.44673 6.68047 6.64625 6.38631 6.64625C6.33602 6.64625 6.28641 6.64005 6.23681 6.62836C6.07216 6.58914 5.93301 6.48801 5.84414 6.34353C5.75596 6.20043 5.72909 6.0305 5.76905 5.86607C5.99087 4.94486 6.88507 4.26582 7.89501 4.25H7.9329C8.93802 4.25 10.0368 4.82859 10.227 6.12269C10.3634 7.0494 9.9142 7.83302 8.99519 8.27333C8.51847 8.50174 8.5226 8.70194 8.52398 8.78725V8.84986C8.52398 9.2083 8.23258 9.5 7.87365 9.5H7.87434Z' fill='white'/%3E%3Ccircle cx='8.00078' cy='11.075' r='0.825' fill='white'/%3E%3C/svg%3E%0A")no-repeat;}
+#mypage_wrap .membership_wrap .membership_info_box{ position: relative;}
+
+#mypage_wrap .membership_wrap .membership_info_box p{position: relative; display: none; width: calc(100% - 108px); min-height: 108px; padding: 12px 34px 12px 12px; position: absolute; top:33px; left: 109px; font-size: 14px; color: #fff; background-color: #303538; border-radius: 8px; font-weight: 400; line-height: 1.5; letter-spacing: -1px; z-index: 1;} 
+#mypage_wrap .membership_wrap .membership_info_box p::after{content: ''; width: 10px; height: 6px; position: absolute; top:-6px; left:10px; background-image: url("data:image/svg+xml,%3Csvg width='10' height='6' viewBox='0 0 10 6' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5 0L10 6L0 6L5 0Z' fill='%23303538'/%3E%3C/svg%3E%0A");}
+#mypage_wrap .membership_wrap .membership_info_box .close{position: absolute; top:12px; right:12px; width: 18px; height: 18px;  background-image: url("data:image/svg+xml,%3Csvg width='18' height='18' viewBox='0 0 18 18' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12 6L6 12' stroke='white' stroke-width='1.4' stroke-linecap='round'/%3E%3Cpath d='M6 6L12 12' stroke='white' stroke-width='1.4' stroke-linecap='round'/%3E%3C/svg%3E%0A"); cursor: pointer;}
+
+@media (max-width: 360px){
+
+    #mypage_wrap .membership_wrap .membership_info_box p br{display: none;}
+
+}
+
+
+
+
+
+
+
+
+
 
 /* 멤버십 해지 신청 안내 */
 #mypage_wrap .membership_wrap .membership_text{margin-bottom: 25px; font-size: 14px; line-height: 24px; color: #737373;}
@@ -188,20 +201,31 @@ main #mypage_wrap section .info_text li::before{content: ''; position: absolute;
 
 /* 결제수단 변경 */
 #mypage_wrap .payment_method_wrap span{display: block; margin-bottom: 16px; font-size: 16px; color: #000; font-weight: 700; line-height: 19px;}
-#mypage_wrap .payment_method_wrap .payment_method_list{margin-bottom: 24px; display: flex; gap: 0 8px; height: 56px;}
+#mypage_wrap .payment_method_wrap .payment_method_list{margin-bottom: 24px; display: flex; gap: 0 8px; min-height: 56px;}
 #mypage_wrap .payment_method_wrap .payment_method_list li{flex: 1;}
 #mypage_wrap .payment_method_wrap .payment_method_list li a{display: flex; height: 100%; align-items: center; justify-content: center; font-size: 17px; font-weight: 600; line-height: 20px; border-radius: 4px;}
-#mypage_wrap .payment_method_wrap .payment_method_list li a.card{background-color: #fff; color: #000; border: 1px solid #D1D5D9;}
-#mypage_wrap .payment_method_wrap .payment_method_list li a.pay{background-color: #303538; color: #fff;}
+#mypage_wrap .payment_method_wrap .payment_method_list li a{background-color: #fff; color: #000; border: 1px solid #D1D5D9;}
+#mypage_wrap .payment_method_wrap .payment_method_list li a.active{background-color: #303538; color: #fff;}
+
+@media (max-width: 576px){
+
+    #mypage_wrap .payment_method_wrap .payment_method_list{display: block;}
+    #mypage_wrap .payment_method_wrap .payment_method_list li{margin-bottom: 8px;}
+    #mypage_wrap .payment_method_wrap .payment_method_list li a{height: 56px;}
+    #mypage_wrap .payment_method_wrap{position: relative;}
+    #mypage_wrap .payment_method_wrap::before{content: ''; position: absolute; bottom: -8px; left: -100px; right: -100px; height: 8px; background-color: #F2F4F5;} 
+    
+
+}
 
 /* 이메일 변경 */
 #mypage_wrap .email_change_wrap .input_text_box{position: relative; font-size: 0;}
 #mypage_wrap .email_change_wrap .input_text_box:nth-of-type(2){margin-bottom: 50px;}
-#mypage_wrap .email_change_wrap .number_box{position: relative; margin-right: 8px; display: inline-block; width: 80.3%;}
+#mypage_wrap .email_change_wrap .number_box{position: relative; margin-right: 8px; display: inline-block; width: calc(100% - 96px);}
 #mypage_wrap .email_change_wrap .number_box span{position: absolute; top: 50%; transform: translateY(-50%); right:14px; font-size: 14px; color: #36B6B0; line-height: 16px; font-weight: 700;}
 #mypage_wrap .email_change_wrap .number_box input{width: 100%!important;}
 #mypage_wrap .email_change_wrap .input_text_box a{display: inline-block; width: 88px; height: 48px; line-height: 46px; text-align: center; font-size: 16px; font-weight: 500; border-radius: 4px; border: 1px solid #D1D5D9; vertical-align: top;} 
-#mypage_wrap .email_change_wrap .input_text_box input{margin-right: 8px; display: inline-block; width: 80.3%; background-color: #fff;}
+#mypage_wrap .email_change_wrap .input_text_box input{margin-right: 8px; display: inline-block; width: calc(100% - 96px); background-color: #fff;}
 
 /* 멤버십 해지 신청 */
 .com_select_box{}
@@ -324,6 +348,8 @@ main #mypage_wrap section .info_text li::before{content: ''; position: absolute;
 #mypage_wrap .account_registration_wrap .info::before{content: ''; left:0;  position: absolute; top: 50%; transform: translateY(-50%); width: 3px; height: 3px; border-radius: 50px; background-color: #737373;}
 
 /* 공통 */
+.error input{border-color: #F56D4C!important;}
+.error p{margin: 10px 0; color: #F56D4C; font-size: 12px; font-weight: 500;}
 .com_check_box{margin-bottom: 37px;}
 .com_check_box input:checked + label::before{content: '\2713'; text-align: center; line-height: 17px;}
 .com_check_box input + label{position: relative; padding-left: 31px; color: #737373; font-size: 14px; line-height: 17px; cursor: pointer;}
@@ -357,7 +383,7 @@ main #mypage_wrap section .info_text li::before{content: ''; position: absolute;
 @media (max-width: 576px){
     
     .popup .com_btn2,
-    .popup2 .com_btn2{position: static;}
+    .popup2 .com_btn2{bottom: 10px;}
 
     .popup,
     .popup2{padding: 24px 16px 16px 16px; min-height: 252px; max-width: 0; top: auto; left:0; right:0; bottom: 0; max-width:none; border-radius: 16px 16px 0 0; transform: none;} 
@@ -367,5 +393,7 @@ main #mypage_wrap section .info_text li::before{content: ''; position: absolute;
 
     .popup p,
     .popup2 p{margin-bottom: 32px; text-align: left;}
+    
+    .com_btn2.st{position: static;}
 
 }
