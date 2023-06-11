@@ -59,6 +59,17 @@ $(function () {
         }
     });
 
+    /* 출퇴근 내역 */
+    $('.com_rayout_list1 li .weekly a').click(function () {
+        if ($(this).hasClass('active')) {
+            $(this).removeClass('active');
+            $(this).next().fadeOut();
+        } else {
+            $(this).addClass('active');
+            $(this).next().fadeIn();
+        }
+    });
+
 
 
 });
