@@ -23,7 +23,7 @@
 }
 
 /* main */
-main{ padding: 100px 0 0; }
+main{ padding: 100px 0 0; overflow-x: hidden;}
 main #mypage_wrap aside{padding: 0 24px; width: 384px; min-height: 765px; border: 1px solid #E6E8EB; border-radius: 8px;} 
 main #mypage_wrap .mypage{display: flex; gap: 0 21px; align-items: flex-start;} 
 main #mypage_wrap .mypage .top{position: relative; padding: 44px 0 0; height: 267px; margin: 32px 0 24px 0; text-align: center;}
@@ -148,9 +148,11 @@ main #mypage_wrap section .info_text li::before{content: ''; position: absolute;
     #mypage_wrap .my_page2 h1{position: relative; margin-bottom: 24px; height: 75px; line-height: 75px; font-size: 28px;}
     #mypage_wrap .my_page2 h1::before{content: ''; position: absolute; left:-100%; right: -100%; bottom: 0; border-bottom: 1px solid #E6E8EB; }
     
-    .com_btn2{position: absolute; left:16px; right:16px; bottom: 44px;}
+    .com_btn2{position: fixed; left: 16px; right: 16px; bottom: 50px;}
     #mypage_wrap .mypage_wrap .border_st{position: relative; display: block; height: 8px; border: 0;}
     #mypage_wrap .mypage_wrap .border_st::after{content: ''; position: absolute; left: -100%; right: -100%; top:0;bottom: 0; background-color:#F2F4F5;}
+    #mypage_wrap .mypage_wrap .com_btn2{position: static!important;}
+
 }
 
 @media (max-width: 767px){
@@ -224,7 +226,7 @@ width: 4px;  height: 24px; background: url("data:image/svg+xml,%3Csvg width='24'
 #mypage_wrap .mypage_wrap .top .text .box span{position: relative; font-size: 12px; color: #737373;}
 #mypage_wrap .mypage_wrap .top .text .box span::after{content: ''; position: absolute; right:-13px; top:50%; margin-top: -1.5px; width: 3px; height: 3px; border-radius: 50%; background-color: #36B6B0;}
 #mypage_wrap .mypage_wrap .top .text .box em{font-size: 12px; color: #36B6B0;}
-#mypage_wrap .mypage_wrap .top .regular_member{position: absolute; top: 50%; transform: translateY(-50%); right:0;  display: block; width: 48px; height: 28px; line-height: 26px; border-radius: 4px; color: #F56D4C; border: 1px solid #F9D0C6; text-align: center; font-size: 12px;}
+#mypage_wrap .mypage_wrap .top .regular_member{position: absolute; top: 50%; transform: translateY(-50%); right:0;  display: block; width: 48px; height: 28px; line-height: 26px; border-radius: 4px; color: #F56D4C; border: 1px solid #F9D0C6; text-align: center; font-size: 12px; background-color:#FEF7F6;}
 #mypage_wrap .mypage_wrap .mypage_list1{margin-bottom: 31px; display: flex; align-items: center; min-height: 46px; justify-content: center; background-color: #F2F4F5;}
 #mypage_wrap .mypage_wrap .mypage_list1 li{position: relative; flex: 1; text-align: center;}
 #mypage_wrap .mypage_wrap .mypage_list1 li:last-child::after{display: none;}
@@ -344,13 +346,14 @@ width: 4px;  height: 24px; background: url("data:image/svg+xml,%3Csvg width='24'
 #mypage_wrap .payment_method_wrap .payment_method_list li a{background-color: #fff; color: #000; border: 1px solid #D1D5D9;}
 #mypage_wrap .payment_method_wrap .payment_method_list li a.active{background-color: #303538; color: #fff;}
 
-@media (max-width: 767px){
+@media (max-width: 1023px){
 
     #mypage_wrap .payment_method_wrap .payment_method_list{display: block;}
     #mypage_wrap .payment_method_wrap .payment_method_list li{margin-bottom: 8px;}
     #mypage_wrap .payment_method_wrap .payment_method_list li a{height: 56px;}
     #mypage_wrap .payment_method_wrap{position: relative;}
     #mypage_wrap .payment_method_wrap::before{content: ''; position: absolute; bottom: -8px; left: -100px; right: -100px; height: 8px; background-color: #F2F4F5;} 
+    #mypage_wrap .payment_method_wrap .com_btn2{position: static;}
     
 
 }
@@ -618,9 +621,6 @@ width: 4px;  height: 24px; background: url("data:image/svg+xml,%3Csvg width='24'
 .popup .select_list li a::after{content: ''; position: absolute; right:21px; top: 50%; transform: translateY(-50%); width: 20px; height: 14px; background: url("data:image/svg+xml,%3Csvg width='20' height='14' viewBox='0 0 20 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.75 6.25L7.60858 12.1086C7.68668 12.1867 7.81332 12.1867 7.89142 12.1086L18.25 1.75' stroke='%2336B6B0' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E%0A")no-repeat;}
 .popup .select_list li a:hover{background-color: #F3FBFA; font-weight: 700;}
 
-
-
-
 /* 팝업_예약취소 */
 .popup2{display: none; padding: 24px; position: fixed; left: 50%; top :50%; transform: translate(-50%, -50%); background-color: #fff; border-radius: 12px; width: 100%; max-width: 330px; min-height: 291px; z-index: 9;}
 .popup2 .tit{margin-bottom: 24px; padding-bottom: 24px; font-size: 20px; line-height: 28px; font-weight: 700; color: #000; border-bottom: 1px solid #E6E8EB; }
@@ -650,9 +650,7 @@ width: 4px;  height: 24px; background: url("data:image/svg+xml,%3Csvg width='24'
 @media (max-width: 1023px){
     
     .popup .com_btn2,
-    .popup2 .com_btn2{position: static; bottom: 10px;}
-
-    .com_btn2.st{position: static;}
+    .popup2 .com_btn2{position: static;}
 
 }
 
