@@ -67,9 +67,13 @@
             <div id="mypage_wrap">
                 <div class="my_page my_page2">
                     <div class="reservation_wrap">
-                        <h1>
-                            예약내역
-                        </h1>
+                        <div class="tit">
+                            <button class="prev"><span class="blind">이전버튼</span></button>
+                            <h1>
+                                예약내역
+                            </h1>
+                        </div>
+                        <!-- //tit -->
 
                         <ul class="com_tab">
                             <li>
@@ -217,11 +221,28 @@
 
                                 </div>
                                 <!-- //reservation_list_box -->
+
                             </div>
                             <!-- //reservation_content_box -->
 
                         </div>
                         <!-- //reservation_content_wrap  -->
+
+                        <span class="cancel">
+                            취소되었습니다.
+                        </span>
+
+                        <!-- 예약취소_완료_이용시작 후 
+                        <div class="no_box">
+                            <p>
+                                취소되었습니다. <br>
+                                이용이 시작되어 환불이 불가합니다.
+                            </p>
+                            <a href="#" class="cancel_txt">
+                                실행취소
+                            </a>
+                        </div>
+-->
 
                     </div>
                     <!-- //reservation_wrap -->
@@ -237,6 +258,45 @@
 
     </div>
     <!-- //wrap -->
+
+    <!-- 예약취소 팝업 -->
+    <div class="popup2">
+        <p class="tit">
+            방문객 초대를 <br>
+            취소하시겠습니까?
+        </p>
+        <dl>
+            <dt>
+                공간정보
+            </dt>
+            <dd>
+                역삼점 2층
+            </dd>
+        </dl>
+        <dl>
+            <dt>
+                이용일시
+            </dt>
+            <dd>
+                2023-04-25(화) 00:00~24:00
+            </dd>
+        </dl>
+        <dl>
+            <dt>
+                결제정보
+            </dt>
+            <dd>
+                2 크레딧
+            </dd>
+        </dl>
+
+        <a href="#" class="no_reservation_btn">예약취소</a>
+
+        <button class="popup_close"><span class="blind">팝업 닫기</span></button>
+    </div>
+    <!-- //popup2 -->
+
+    <div class="popup_bg"></div>
 
 </body>
 

@@ -8,7 +8,7 @@
     <meta name="Author" content="" />
     <meta name="viewport"
         content="width=device-width, height=device-height, initial-scale=1.0, minimum-scale=1.0, maximum-scale=2.0, user-scalable=yes">
-    <title>상품정보_마이페이지</title>
+    <title>예약내역_마이페이지</title>
     <link rel="stylesheet" href="../css/fonts.css">
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/style.css">
@@ -62,61 +62,64 @@
 
         </header>
         <!-- //header -->
+
         <main>
             <div id="mypage_wrap">
                 <div class="my_page my_page2">
-                    <div class="product_information_wrap">
+                    <div class="usage_history_wrap">
                         <div class="tit">
                             <button class="prev"><span class="blind">이전버튼</span></button>
                             <h1>
-                                상품정보
+                                예약내역
                             </h1>
                         </div>
                         <!-- //tit -->
 
-                        <div class="product_information_box">
-                            <h2>
-                                기본 서비스 제공
-                            </h2>
-                            <dl>
-                                <dt>일 방문 가능</dt>
-                                <dd>300명</dd>
-                            </dl>
-                            <dl>
-                                <dt>월 제공 크레딧</dt>
-                                <dd>300 크레딧</dd>
-                            </dl>
-                            <dl>
-                                <dt>월 제공 복합기</dt>
-                                <dd>흑백 1500장 / 컬러 200장</dd>
-                            </dl>
-                           <!-- <a href="#" class="com_link01">복합기 가이드</a>-->
-                        </div>
-                        <!-- //product_information_box -->
+                        <ul class="com_tab">
+                            <li>
+                                <a href="#" class="active">회의실</a>
+                            </li>
+                            <li>
+                                <a href="#">좌석</a>
+                            </li>
+                            <li>
+                                <a href="#">초대</a>
+                            </li>
+                        </ul>
+                        <!-- //reservation_tab -->
 
-                        <div class="border_st"></div>
+                        <div class="reservation_content_wrap">
 
-                        <div class="product_information_box">
-                            <h2>
-                                유료 과금 정보
-                            </h2>
-                            <dl>
-                                <dt>라운지 방문</dt>
-                                <dd>20,000원</dd>
-                            </dl>
-                            <dl>
-                                <dt>크레딧</dt>
-                                <dd>10,000원</dd>
-                            </dl>
-                            <dl>
-                                <dt>복합기</dt>
-                                <dd>흑백 1장 / 10원, 컬러 1장 / 100원</dd>
-                            </dl>
+                            <ul class="com_rayout_list1">
+                                <li>
+                                    <span>총 크레딧</span>
+                                    <em>
+                                        100.00
+                                    </em>
+                                </li>
+                                <li>
+                                    <span>잔여 크레딧</span>
+                                    <em>
+                                        40.00
+                                    </em>
+                                </li>
+                            </ul>
+                            <!-- //credit_list -->
+
+                            <div class="reservation_content_box">
+
+                                <p class="no_history">
+                                    이용내역이 없습니다.
+                                </p>
+
+                            </div>
+                            <!-- //reservation_content_box -->
+
                         </div>
-                        <!-- //product_information_box -->
+                        <!-- //reservation_content_wrap  -->
 
                     </div>
-                    <!-- //product_information_wrap -->
+                    <!-- //usage_history_wrap -->
 
                 </div>
                 <!-- //my_page2 -->
@@ -129,8 +132,6 @@
 
     </div>
     <!-- //wrap -->
-
-
 </body>
 
 </html>

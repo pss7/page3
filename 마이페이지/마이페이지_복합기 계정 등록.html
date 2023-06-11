@@ -68,9 +68,13 @@
                 <div class="my_page my_page2">
 
                     <div class="account_registration_wrap">
-                        <h1>
-                            복합기 계정 등록
-                        </h1>
+                        <div class="tit">
+                            <button class="prev"><span class="blind">이전버튼</span></button>
+                            <h1>
+                                복합기 계정 등록
+                            </h1>
+                        </div>
+                        <!-- //tit -->
 
                         <div class="input_text_box">
                             <label for="name">
@@ -80,11 +84,25 @@
                         </div>
                         <!-- //box -->
 
-                        <p class="info">
-                            복합기 계정은 최초 1회 직접 계정을 등록해야 합니다.
-                        </p>
+                        <ul class="info">
+                            <li>
+                                복합기 계정은 최초 1회 직접 계정을 등록해야 합니다.
+                            </li>
+                        </ul>
 
                         <a href="#" class="com_btn2">등록하기</a>
+
+                        <!-- 복합기 계정 등록 실패
+                        <div class="no_box">
+                            <p>
+                               복합기 계정 등록에 실패했습니다. <br>
+                                관리자에게 문의해주세요.
+                            </p>
+                            <a href="#" class="cancel_txt color">
+                                문의하기
+                            </a>
+                        </div>
+                    -->
 
                     </div>
                     <!-- //my_com_wrap1 -->
@@ -100,6 +118,35 @@
 
     </div>
     <!-- //wrap -->
+
+    <!-- 계정등록 완료 팝업 -->
+    <div class="popup">
+        <h2>
+            계정 등록이 <br>
+            완료되었습니다.
+        </h2>
+        <p>
+            초기 비밀번호 : 1234
+        </p>
+        <a href="#" class="com_btn2">확인</a>
+    </div>
+    <!-- //popup -->
+
+
+    <!-- 계정등록 실패 팝업 -->
+    <div class="popup" style="padding-top: 64px;">
+        <h2>
+            복합기 계정 등록이 <br>
+            실패했습니다.
+        </h2>
+        <p>
+            관리자에게 문의해주세요.
+        </p>
+        <a href="#" class="com_btn2">확인</a>
+        <button class="popup_close"><span class="blind">팝업닫기</span></button>
+    </div>
+
+    <div class="popup_bg"></div>
 </body>
 
 </html>

@@ -8,8 +8,7 @@
     <meta name="Author" content="" />
     <meta name="viewport"
         content="width=device-width, height=device-height, initial-scale=1.0, minimum-scale=1.0, maximum-scale=2.0, user-scalable=yes">
-    <title>환경설정_마이페이지</title>
-
+    <title>멤버십 해지_마이페이지</title>
     <link rel="stylesheet" href="../css/fonts.css">
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/style.css">
@@ -69,39 +68,86 @@
         <main>
             <div id="mypage_wrap">
                 <div class="my_page my_page2">
-                    <div class="setting_wrap">
+                    <div class="membership_wrap">
                         <div class="tit">
                             <button class="prev"><span class="blind">이전버튼</span></button>
                             <h1>
-                                환경설정
+                                맴버십 해지
                             </h1>
                         </div>
                         <!-- //tit -->
 
-                        <ul class="setting_list">
+                        <h2>
+                            이용 중인 <br>
+                            멤버십이 있어요!
+                        </h2>
+
+                        <ul class="membership_list">
                             <li>
-                                <span>PUSH 알림 동의</span>
                                 <a href="#">
-                                    <div><span class="blind">동의하지 않음</span></div>
+                                    <input id="membership_radio" type="radio" name="1" class="blind" checked>
+                                    <label for="membership_radio">
+                                        <h3>
+                                            멤버십명
+                                        </h3>
+                                        <span>
+                                            상품명
+                                        </span>
+                                    </label>
                                 </a>
                             </li>
                             <li>
-                                <span>마케팅 정보 수신 동의</span>
                                 <a href="#">
-                                    <div><span class="blind">동의하지 않음</span></div>
+                                    <input id="membership_radio2" type="radio" name="1" class="blind">
+                                    <label for="membership_radio2">
+                                        <h3>
+                                            멤버십명
+                                        </h3>
+                                        <span>
+                                            상품명
+                                        </span>
+                                    </label>
                                 </a>
                             </li>
                             <li>
-                                <span>위치정보 수집 이용 동의</span>
                                 <a href="#">
-                                    <div><span class="blind">동의하지 않음</span></div>
+                                    <input id="membership_radio3" type="radio" name="1" class="blind">
+                                    <label for="membership_radio3">
+                                        <h3>
+                                            멤버십명
+                                        </h3>
+                                        <span>
+                                            상품명
+                                        </span>
+                                    </label>
                                 </a>
                             </li>
                         </ul>
-                        <!-- //setting_list -->
+                        <!-- //membership_list -->
+
+                        <div class="membership_info_box">
+                            <a href="#" class="membership_info">해지가 안되는 이유</a>
+                            <div class="text">
+                                <p>
+                                    회사에서 이용중인 상품인 경우 <br>
+                                    담당자에게 멤버 삭제를 요청해야 <br>
+                                    탈퇴가 가능합니다. <br>
+                                    고객문의 : 02-555-3477
+
+                                    <button class="close">
+                                        <span class="blind">닫기</span>
+                                    </button>
+                                </p>
+                            </div>
+                            <!-- //text -->
+
+                        </div>
+                        <!-- //membership_info -->
+
+                        <a href="#" class="com_btn2">해지하기</a>
 
                     </div>
-                    <!-- //setting_wrap -->
+                    <!-- //secession_wrap -->
 
                 </div>
                 <!-- //my_page2 -->
@@ -114,7 +160,6 @@
 
     </div>
     <!-- //wrap -->
-
 
 </body>
 

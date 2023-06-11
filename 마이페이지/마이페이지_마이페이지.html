@@ -8,10 +8,13 @@
     <meta name="Author" content="" />
     <meta name="viewport"
         content="width=device-width, height=device-height, initial-scale=1.0, minimum-scale=1.0, maximum-scale=2.0, user-scalable=yes">
-    <title>상품정보_공지사항</title>
+    <title>마이페이지_마이페이지</title>
     <link rel="stylesheet" href="../css/fonts.css">
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/style.css">
+
+    <script src="../js/jquery-1.12.4.min.js"></script>
+    <script src="../js/script.js"></script>
 </head>
 
 <body>
@@ -65,98 +68,103 @@
         <main>
             <div id="mypage_wrap">
                 <div class="my_page my_page2">
-                    <div class="notice_wrap">
+                    <div class="mypage_wrap">
                         <div class="tit">
                             <button class="prev"><span class="blind">이전버튼</span></button>
                             <h1>
-                                공지사항
+                                마이페이지
                             </h1>
+                            <a href="#" class="membership_conversion">멤버십전환</a>
                         </div>
                         <!-- //tit -->
-                        <ul class="notice_list">
-                            <li>
-                                <a href="#">
-                                    <em class="emergency">
-                                        긴급
-                                    </em>
-                                    <h2>
-                                        집중호우에 따른 이용 제한 지점 안내
-                                    </h2>
+
+                        <div class="top">
+                            <div class="img"
+                                style="background: url(../images/my/img_1.png)no-repeat center; background-size: cover;">
+                            </div>
+                            <div class="text">
+                                <h2>김스플</h2>
+                                <span class="email">
+                                    spark.kim@sparkplus.co
+                                </span>
+                                <div class="box">
                                     <span>
-                                        2023.05.17
+                                        sparkplus
                                     </span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <em class="common">
-                                        일반
-                                    </em>
-                                    <h2>
-                                        집중호우에 따른 이용 제한 지점 안내
-                                    </h2>
-                                    <span>
-                                        2023.05.17
-                                    </span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
                                     <em>
-                                        일반
+                                        관리자
                                     </em>
-                                    <h2>
-                                        집중호우에 따른 이용 제한 지점 안내
-                                    </h2>
-                                    <span>
-                                        2023.05.17
-                                    </span>
+                                </div>
+                            </div>
+                            <span class="regular_member">
+                                정회원
+                            </span>
+                        </div>
+                        <!-- //top -->
+
+                        <ul class="mypage_list1">
+                            <li>
+                                <a href="#">내정보</a>
+                            </li>
+                            <li>
+                                <a href="#">멤버십 정보</a>
+                            </li>
+                            <li class="membership_conversion">
+                                <a href="#">멤버십 전환</a>
+                            </li>
+                        </ul>
+                        <!-- //mypage_list1 -->
+
+                        <ul class="mypage_list2">
+                            <li>
+                                <a href="#" class="icon1">예약내역
+                                    <strong>3</strong>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="icon2">이용내역</a>
+                            </li>
+                            <li>
+                                <a href="#" class="icon3">공지사항</a>
+                            </li>
+                            <li>
+                                <a href="#" class="icon4">출퇴근내역</a>
+                            </li>
+                        </ul>
+                        <!-- //mypage_list2 -->
+
+                        <div class="border_st"></div>
+
+                        <ul class="mypage_list3">
+                            <li>
+                                <a href="#">
+                                    환경설정
                                 </a>
                             </li>
                             <li>
                                 <a href="#">
-                                    <em>
-                                        일반
-                                    </em>
-                                    <h2>
-                                        집중호우에 따른 이용 제한 지점 안내
-                                    </h2>
-                                    <span>
-                                        2023.05.17
-                                    </span>
+                                    복합기 계정정보
                                 </a>
                             </li>
                             <li>
                                 <a href="#">
-                                    <em>
-                                        일반
-                                    </em>
-                                    <h2>
-                                        집중호우에 따른 이용 제한 지점 안내
-                                    </h2>
-                                    <span>
-                                        2023.05.17
-                                    </span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <em>
-                                        일반
-                                    </em>
-                                    <h2>
-                                        집중호우에 따른 이용 제한 지점 안내
-                                    </h2>
-                                    <span>
-                                        2023.05.17
-                                    </span>
+                                    매뉴얼
                                 </a>
                             </li>
                         </ul>
-                        <!-- //notice_list -->
+                        <!-- //mypage_list3 -->
+
+                        <div class="box2">
+                            <a href="#">
+                                <span class="blind"></span>
+                            </a>
+                            <p>
+                                불편한 점이 있으신가요?
+                            </p>
+                        </div>
 
                     </div>
-                    <!-- //notice_wrap -->
+                    <!-- //mypage_wrap -->
 
                 </div>
                 <!-- //my_page2 -->
@@ -169,7 +177,6 @@
 
     </div>
     <!-- //wrap -->
-
 
 </body>
 
