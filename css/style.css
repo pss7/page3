@@ -219,7 +219,11 @@ width: 4px;  height: 24px; background: url("data:image/svg+xml,%3Csvg width='24'
 /* 마이페이지 */
 #mypage_wrap .mypage_wrap{position: relative; border: 0!important; padding: 0!important; margin: 0!important;}
 #mypage_wrap .mypage_wrap .top{margin-bottom: 16px; position: relative; padding: 8px 0 8px 0; display: flex; align-items: center;  min-height: 72px;}
-#mypage_wrap .mypage_wrap .top .img{flex-shrink: 0; width: 56px; height: 56px; margin-right: 16px;}
+#mypage_wrap .mypage_wrap .top .img_box{flex-shrink: 0; width: 56px; height: 56px; margin-right: 16px;}
+#mypage_wrap .mypage_wrap .top .img_box .img{width: 56px; height: 56px; background-image: url("data:image/svg+xml,%3Csvg width='56' height='56' viewBox='0 0 56 56' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M28 56C43.464 56 56 43.464 56 28C56 12.536 43.464 0 28 0C12.536 0 0 12.536 0 28C0 43.464 12.536 56 28 56Z' fill='%23D1D5D9'/%3E%3Cpath d='M27.9999 33.4193C33.4872 33.4193 37.9354 28.971 37.9354 23.4838C37.9354 17.9966 33.4872 13.5483 27.9999 13.5483C22.5127 13.5483 18.0645 17.9966 18.0645 23.4838C18.0645 28.971 22.5127 33.4193 27.9999 33.4193Z' fill='%23F2F4F5'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M48.0997 47.4936C43.0108 52.7397 35.8861 55.9999 28 55.9999C20.1139 55.9999 12.9893 52.7397 7.90039 47.4936C12.075 40.6731 19.5118 36.1289 28 36.1289C36.4883 36.1289 43.925 40.6731 48.0997 47.4936Z' fill='%23F2F4F5'/%3E%3C/svg%3E%0A");}
+
+
+
 #mypage_wrap .mypage_wrap .top .text h2{margin-bottom: 4px; font-size: 18px; color: #000; font-weight: 700;}
 #mypage_wrap .mypage_wrap .top .text .email{display: block; font-size: 12px; margin-bottom: 4px; color: #737373;}
 #mypage_wrap .mypage_wrap .top .text .box{display: flex; gap: 0 22px;}
