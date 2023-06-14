@@ -70,6 +70,29 @@ $(function () {
         }
     });
 
+    /* 결제수단 변경 */
+    $('.payment_method_list li a').click(function () {
+        if ($(this).hasClass('active')) {
+            $(this).removeClass('active');
+        } else {
+            $('.payment_method_list li a').removeClass('active');
+            $(this).addClass('active');
+
+        }
+    });
+
+    /* 결제 */
+    $('.payment_method_list li a').click(function () {
+        if ($(this).hasClass('active')) {
+            $(this).removeClass('active');
+        } else {
+            $('.payment_method_list li a').removeClass('active');
+            $(this).addClass('active');
+        }
+        return false;
+    });
+
+
 
 
 });
