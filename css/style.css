@@ -37,7 +37,7 @@
 }
 
 /* main */
-main{ padding: 100px 0 0; }
+main{ padding: 100px 0 50px; }
 main #mypage_wrap aside{padding: 0 24px; width: 384px; min-height: 765px; border: 1px solid #E6E8EB; border-radius: 8px;} 
 main #mypage_wrap .mypage{display: flex; gap: 0 21px; align-items: flex-start;} 
 main #mypage_wrap .mypage .top{position: relative; padding: 44px 0 0; height: 267px; margin: 32px 0 24px 0; text-align: center;}
@@ -535,14 +535,11 @@ width: 4px;  height: 24px; background: url("data:image/svg+xml,%3Csvg width='24'
 #mypage_wrap .reservation_content_box{position: relative; min-height: 350px;}
 #mypage_wrap .no_history{position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 16px; color: #9E9E9E; text-align: center;}
 #mypage_wrap .reservation_wrap{position: relative;}
-#mypage_wrap .reservation_wrap .cancel{padding: 14px 0; position: relative; display: block; margin: 65px auto 40px; text-align: center; font-size: 14px; color: #fff; background-color: #303538; border-radius: 6px;}
-
+#mypage_wrap .reservation_wrap .cancel{padding: 14px 0; position: relative; display: block; margin: 65px auto 0; text-align: center; font-size: 14px; color: #fff; background-color: #303538; border-radius: 6px;}
 #mypage_wrap .no_box{position: absolute; left:0; right: 0; bottom: 0; padding: 14px 0 14px 16px; text-align: left;  background-color: #303538; border-radius: 6px;}
 #mypage_wrap .no_box p{font-size: 14px; color: #fff; }
 #mypage_wrap .no_box .cancel_txt{position: absolute; top: 50%; transform: translateY(-50%); right:16px; font-size: 14px; font-weight: 700; color: #F56D4C;}
 #mypage_wrap .no_box .cancel_txt.color{color: #36B6B0;}
-
-
 
 .com_history_wrap{margin: 29px 0 21px; display: flex; justify-content: center; gap: 0 39px; align-items: center;}
 .com_history_wrap strong{font-size: 20px; font-weight: 700; line-height: 24px; color: #000;}
