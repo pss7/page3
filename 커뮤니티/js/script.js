@@ -64,8 +64,6 @@ $(function () {
 
     })
 
-
-
     var ww = $(window).width();
     var mySwiper = undefined;
     
