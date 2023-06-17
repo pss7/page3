@@ -214,9 +214,19 @@ main #mypage_wrap section .info_text li::before{content: ''; position: absolute;
 #mypage_wrap .membership_wrap h2 + .com_btn2{position: static;}
 
 /* 멤버십 전환 */
-#mypage_wrap .membership_wrap.st .membership_list li a em{margin-bottom: 6px; display: block; font-size: 13px;}
+#mypage_wrap .membership_wrap.st .membership_list li a em{margin-bottom: 6px; display: block; font-size: 13px; font-weight: 700;}
 #mypage_wrap .membership_wrap.st .membership_list li a .in-use{color: #36B6B0;}
 #mypage_wrap .membership_wrap.st .membership_list li a .expected-use{color: #9EA7AD;}
+#mypage_wrap .membership_wrap.st .membership_list li a .suspension{color: #F56D4C;}
+#mypage_wrap .membership_wrap.st .membership_list li a.suspension_list{background-color:#F9FAFA ;}
+#mypage_wrap .membership_wrap.st .membership_list li a.suspension_list h3{color: #BDBDBD;}
+#mypage_wrap .membership_wrap.st .membership_list li a.suspension_list span{color: #BDBDBD;}
+#mypage_wrap .membership_wrap.st .membership_list li a.suspension_list::after{display: none;}
+
+
+
+
+
 
 /* 멤버십 인증 */
 #mypage_wrap .membership_wrap{position: relative;}
@@ -306,13 +316,15 @@ width: 4px;  height: 24px; background: url("data:image/svg+xml,%3Csvg width='24'
 
 
 
+/* 멤버십 버튼 */
+.membership_wrap .com_btn2{position: fixed; bottom: 10px; left: 16px; right: 16px;}
 
 
 /* 멤버십 해지 */
 #mypage_wrap .membership_wrap h2{margin-bottom: 16px; font-size: 24px; color: #000; font-weight: 700; line-height: 32px;}
 #mypage_wrap .membership_wrap .membership_list li{margin-bottom: 8px;}
 #mypage_wrap .membership_wrap .membership_list li:last-child{margin-bottom: 24px;}
-#mypage_wrap .membership_wrap .membership_list li a{padding:0 20px 0 18px; display: flex; align-items: center; min-height: 90px; border: 1px solid #E6E8EB; border-radius: 8px;}
+#mypage_wrap .membership_wrap .membership_list li a{padding:0 20px 0 18px; display: flex; flex-direction: column; justify-content: center; align-items: flex-start; min-height: 90px; border: 1px solid #E6E8EB; border-radius: 8px;}
 #mypage_wrap .membership_wrap .membership_list li a h3{font-size: 16px; color: #000; font-weight: 600; margin-bottom: 6px; line-height: 19px;}
 #mypage_wrap .membership_wrap .membership_list li a span{font-size: 14px; color: #737373; line-height: 16px;}
 #mypage_wrap .membership_wrap .membership_list li a label{position: relative; width: 100%; height: 100%; display: flex; flex-direction: column; justify-content: center;  padding-left: 38px; cursor: pointer;}
@@ -634,16 +646,22 @@ width: 4px;  height: 24px; background: url("data:image/svg+xml,%3Csvg width='24'
 /* 팝업 */
 /* 팝업_비밀번호 변경 */   
 .popup_bg{display: none; position: fixed; left:0; right:0; bottom: 0; top:0; background-color: rgba(0,0,0,.2);}
-.popup{display: none; position: absolute; top:50%; left: 50%; transform: translate(-50%, -50%); width: 100%; max-width: 330px; min-height: 202px; border-radius: 12px; background-color: #fff; padding: 40px 24px 24px; text-align: center; z-index: 9;}
+.popup{display: none; position: absolute; top:50%; left: 50%; transform: translate(-50%, -50%); width: 100%; max-width: 330px; min-height: 202px; border-radius: 12px; background-color: #fff; padding: 40px 16px 24px; text-align: center; z-index: 9; overflow: hidden;}
 .popup h2{margin-bottom: 16px; font-size: 20px; color: #000; line-height: 28px; font-weight: 700;}
 .popup p{margin-bottom: 24px; font-size: 14px; color: #737373; line-height: 22px;}
 .popup .com_btn2{height: 56px;}
 
 /* 팝업_이메일 선택 */
 .popup .select_list{margin-bottom: 32px;}
-.popup .select_list li a{position: relative; display: block; padding: 15px 0 15px 16px; font-size: 16px; color: #000; transition: all .3s; text-align: left;}
-.popup .select_list li a::after{content: ''; position: absolute; right:21px; top: 50%; transform: translateY(-50%); width: 20px; height: 14px; background: url("data:image/svg+xml,%3Csvg width='20' height='14' viewBox='0 0 20 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.75 6.25L7.60858 12.1086C7.68668 12.1867 7.81332 12.1867 7.89142 12.1086L18.25 1.75' stroke='%2336B6B0' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E%0A")no-repeat;}
-.popup .select_list li a:hover{background-color: #F3FBFA; font-weight: 700;}
+.popup .select_list li a{position: relative; display: block; padding: 15px 0 15px 0; font-size: 16px; color: #000; transition: all .3s; text-align: left; z-index: 1;}
+.popup .select_list li a.active::after{content: ''; position: absolute; right:0; top: 50%; transform: translateY(-50%); width: 20px; height: 14px; background: url("data:image/svg+xml,%3Csvg width='20' height='14' viewBox='0 0 20 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.75 6.25L7.60858 12.1086C7.68668 12.1867 7.81332 12.1867 7.89142 12.1086L18.25 1.75' stroke='%2336B6B0' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E%0A")no-repeat;}
+.popup .select_list li a.active{ font-weight: 700;}
+.popup .select_list li a.active::before{content: ''; position: absolute; top:0; left:-100%; right: -100%; bottom: 0; background-color: #F3FBFA; z-index: -1;}
+
+.popup .select_list li a.suspension{color: #D1D5D9;}
+.popup .select_list li a.suspension::after{display: none;}
+.popup .select_list li a.suspension span{position: absolute; top: 50%; transform: translateY(-50%); right:16px; color: #F56D4C; font-size: 14px;}
+.popup.email h2{text-align: left;}
 
 /* 팝업_예약취소 */
 .popup2{display: none; padding: 24px; position: fixed; left: 50%; top :50%; transform: translate(-50%, -50%); background-color: #fff; border-radius: 12px; width: 100%; max-width: 330px; min-height: 291px; z-index: 9;}
