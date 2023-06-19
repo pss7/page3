@@ -878,6 +878,32 @@ background: url("data:image/svg+xml,%3Csvg width='6' height='10' viewBox='0 0 6 
 .url_wrap .url_qr_wrap .qr_box{margin-bottom: 30px; text-align: center;}
 .url_wrap .url_qr_wrap .qr_box span{font-size: 14px; color: #000;}
 .url_wrap .url_qr_wrap .qr_box span em{color: #31A49E; font-weight: 700;}
+.url_wrap .url_qr_wrap .qr_box .box{ margin: 0 auto 16px; width: 220px; height: 220px; background-color: #F2F4F5;}
+.url_wrap .url_qr_wrap .qr_box .box p{position: relative; padding-top: 61px; font-size: 16px; color: #737373; letter-spacing: -1px;}
+.url_wrap .url_qr_wrap .qr_box .box p::after{content: ''; position: absolute; left: 50%; transform: translateX(-50%); top:0;}
+
+.url_wrap .url_qr_wrap .qr_box .no{padding-top: 52px;}
+.url_wrap .url_qr_wrap .qr_box .no p{position: relative; padding-top: 61px;}
+.url_wrap .url_qr_wrap .qr_box .no p::after{
+    width: 60px; height: 60px;
+    background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M48.2525 11.7475C45.2234 8.71845 39.5 6.25 30 6.25C20.5 6.25 14.7844 8.71845 11.7475 11.7475C8.71844 14.7766 6.25 20.5 6.25 30C6.25 39.5 8.71844 45.2156 11.7475 48.2525C14.7766 51.2816 20.5 53.75 30 53.75C39.5 53.75 45.2156 51.2816 48.2525 48.2525C51.2816 45.2234 53.75 39.5 53.75 30C53.75 20.5 51.2816 14.7844 48.2525 11.7475Z' fill='%23D1D5D9'/%3E%3Ccircle cx='29.9998' cy='40.25' r='2.75' fill='white'/%3E%3Cpath d='M29.9988 20V32.5' stroke='white' stroke-width='4.5' stroke-linecap='round'/%3E%3C/svg%3E%0A");
+
+}
+.url_wrap .url_qr_wrap .qr_box .refresh{padding-top: 65px;}
+.url_wrap .url_qr_wrap .qr_box .refresh p{padding-top: 66px;}
+.url_wrap .url_qr_wrap .qr_box .refresh p::after{
+width: 50px; height: 50px;
+    background-image: url("data:image/svg+xml,%3Csvg width='50' height='50' viewBox='0 0 50 50' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='50' height='50' rx='25' fill='white'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M35.25 25C34.6977 25 34.2557 25.4493 34.1967 25.9984C33.6989 30.6375 29.7713 34.25 25 34.25C19.8914 34.25 15.75 30.1086 15.75 25C15.75 19.8914 19.8914 15.75 25 15.75C28.5326 15.75 31.6027 17.7303 33.1607 20.6413C33.3552 21.0046 33.7239 21.25 34.1359 21.25C34.8553 21.25 35.3553 20.5373 35.0285 19.8965C33.1683 16.2484 29.3759 13.75 25 13.75C18.7868 13.75 13.75 18.7868 13.75 25C13.75 31.2132 18.7868 36.25 25 36.25C30.8764 36.25 35.7005 31.7444 36.2062 25.9994C36.2546 25.4492 35.8023 25 35.25 25Z' fill='%23424242'/%3E%3Cpath d='M28.75 21.25H34.375C34.7202 21.25 35 20.9702 35 20.625V15' stroke='%23424242' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E%0A");
+
+
+}
+
+
+
+
+
+
+
 
 /* 구글캘린더 회의실 예약 안내 */
 .information_wrap .information_box .img_box{position: relative; padding-top: 30%; height: 0; margin-bottom: 24px;}
