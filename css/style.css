@@ -1008,8 +1008,8 @@ width: 7px; height: 10px;
 width: 20px; height: 20px;
     background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='10' cy='10' r='10' fill='%23BDBDBD'/%3E%3Ccircle cx='10.0004' cy='13.7' r='1.1' fill='white'/%3E%3Cpath d='M10 5.59998V10.6' stroke='white' stroke-width='1.4' stroke-linecap='round'/%3E%3C/svg%3E%0A");
 }
-.checkin_wrap .branch_office_wrap{max-width: 375px; margin: 0 auto; padding: 13px 24px 13px 16px;background-color: #252836; border-radius: 16px;} 
-.checkin_wrap .branch_office_wrap h2{position: relative; padding-left: 32px; margin-bottom: 14px; font-size: 16px; color: #fff;}
+.checkin_wrap .branch_office_wrap{max-width: 375px; margin: 0 auto; padding: 17px 24px 17px 16px;background-color: #252836; border-radius: 16px;} 
+.checkin_wrap .branch_office_wrap h2{position: relative; padding-left: 32px; margin-bottom: 10px; font-size: 16px; color: #fff;}
 .checkin_wrap .branch_office_wrap h2::before{content: ''; position: absolute; top: 50%; transform: translateY(-50%); left:0;
     width: 24px; height: 24px;
     background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='24' height='24' rx='12' fill='%2340474D'/%3E%3Cpath d='M6 14.2V9.8C6 9.72637 6.0597 9.66667 6.13333 9.66667H9.28574C9.31652 9.66667 9.34635 9.65602 9.37017 9.63653L12.7822 6.84484C12.8693 6.77361 13 6.83555 13 6.94804V17.052C13 17.1645 12.8693 17.2264 12.7822 17.1552L9.37017 14.3635C9.34635 14.344 9.31652 14.3333 9.28574 14.3333H6.13333C6.0597 14.3333 6 14.2736 6 14.2Z' fill='white' stroke='white' stroke-width='0.933333' stroke-linecap='round'/%3E%3Cpath d='M15.3334 9.16667L17.0654 8.16667' stroke='white' stroke-width='0.933333' stroke-linecap='round'/%3E%3Cpath d='M15.3334 14.6667L17.0654 15.6667' stroke='white' stroke-width='0.933333' stroke-linecap='round'/%3E%3Cpath d='M16 11.9167H18' stroke='white' stroke-width='0.933333' stroke-linecap='round'/%3E%3C/svg%3E%0A");
