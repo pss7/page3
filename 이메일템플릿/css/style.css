@@ -131,7 +131,7 @@ background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox=
     background-size: cover;
     
 }
-.mail .link li a.web{padding: 7px  19px; color: #fff; border-radius: 8px; background-color: #30B7B0; font-size: 17px; font-weight: 500; line-height: 1.4;}
+.mail .link li a.web{padding: 7px  19px; color: #fff; border-radius: 8px; background-color: #30B7B0; font-size: 17px; font-weight: 500; line-height: 1.4; letter-spacing: -2px;}
 
 @media (max-width: 480px){
 
@@ -190,7 +190,26 @@ background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox=
 }
 
 /* section3 */
-.mail #section3{padding: 70px 0; position: relative; z-index: 1;}
+.mail #section3{padding: 70px 0 73%; position: relative; z-index: 1;}
+.mail #section3 .img_box{position: absolute; top:315px; left:0; right:0;}
+.mail #section3 .img_box img{width: 100%;}
+.mail #section3 .img_box .img_pc{max-width: 800px;}
+.mail #section3 .img_box .img_m{display: none; max-width: 417px;}
+/*
+.mail #section3 .img{position: absolute;}
+.mail #section3 .img img{width: 100%;}
+.mail #section3 .img1{left:0; top: 403px;}
+.mail #section3 .img2{left:134px; top: 298px;}
+.mail #section3 .img3{left:324px; top: 368px;}
+.mail #section3 .img4{right:0; top: 413px;}
+.mail #section3 .img5{left:134px; top:538px;}
+.mail #section3 .img6{left:374px; top: 538px;}
+*/
+
+
+
+
+
 .mail #section3::before{content: ''; position: absolute; left:0; top:0; right:0; bottom: 0; background-color: #fff; z-index: -1;}
 .mail #section3::after{content: ''; position: absolute; top:109px; right:0; z-index: -1; background-size: auto 100%;
     padding: 255px 327px 0 0;
@@ -200,8 +219,11 @@ background-image: url("data:image/svg+xml,%3Csvg width='327' height='255' viewBo
 
 @media (max-width: 480px){
 
-    .mail #section3{padding: 60px 0;}
-    .mail #section3::after{padding: 198px 260px 0 0;}
+    .mail #section3{padding: 60px 0 90%;}
+    .mail #section3::after{top: 199px; padding: 198px 260px 0 0;}
+    .mail #section3 .img_box{top: 360px;}
+    .mail #section3 .img_box .img_pc{display: none;}
+    .mail #section3 .img_box .img_m{display: block;}
 
 }
 
@@ -213,7 +235,8 @@ background-image: url("data:image/svg+xml,%3Csvg width='327' height='255' viewBo
 @media (max-width: 480px){
 
     .mail .com_tit{padding-left: 0;}
-    .mail .com_tit span{font-size: 18px;}
+    .mail .com_tit p{line-height: 1.8;}
+    .mail .com_tit span{margin-bottom: 5px; font-size: 18px;}
     .mail .com_tit h3{font-size: 24px;}
 
 }
@@ -221,39 +244,76 @@ background-image: url("data:image/svg+xml,%3Csvg width='327' height='255' viewBo
 /* section4 */
 .mail #section4{padding: 70px 0 0;}
 .mail #section4 .tit{margin-bottom: 40px;}
+.mail #section4 .img_box{}
+.mail #section4 .img_box img{width: 100%;} 
+.mail #section4 .img_pc{max-width: 700px;}
+.mail #section4 .img_m{display: none; max-width: 361px;}
+
 
 @media(max-width: 480px){
 
     .mail #section4{padding: 60px 0 0;}
+    .mail #section4 .com_tit{margin-bottom: 30px;}
+    .mail #section4 .img_box{top: 220px;}
+
+
+}
+
+@media(max-width: 360px){
+
+    .mail #section4 .img_pc{display: none;}
+    .mail #section4 .img_m{display: block;}
 
 }
 
 /* section5 */
-.mail #section5{position: relative; padding: 70px 0; z-index: 1;}
+.mail #section5{position: relative; padding: 70px 0; z-index: 1; overflow: hidden;}
 .mail #section5::after{content: ''; position: absolute; top:0; left:0; right:0; bottom: 0; background-color: #fff; z-index: -1;} 
 .mail #section5 .com_tit{margin-bottom: 40px;}
+.mail #section5 .img_box{display: flex; justify-content: center; margin: 0 -12px;}
+.mail #section5 .img_box img{width: 100%;}
+.mail #section5 .img_box .img_m{display: none; max-width: 368px;}
+.mail #section5 .img_box .img_pc{max-width: 734px;}
 
 @media(max-width: 480px){
 
     .mail #section5{padding: 60px 0;}
+    .mail #section5 .com_tit{margin-bottom: 30px;}
+
+}
+
+@media(max-width: 360px){
+
+    .mail #section5 .img_pc{display: none;}
+    .mail #section5 .img_box .img_m{display: block;}
 
 }
 
 /* section6 */
 .mail #section6{padding: 70px 0;}
+.mail #section6 .com_tit{margin-bottom: 27px;}
 .mail #section6 .check{padding: 7px 20px; border-radius: 8px; background-color: #9EA7AD; color: #fff; font-size: 17px; 
     font-weight: 500; line-height: 1.4;}
+.mail #section6 .img_box {margin-bottom: 36px;}
+.mail #section6 .img_box img{width: 100%;}
+.mail #section6 .img_box .img_pc{max-width: 614px;}
+.mail #section6 .img_box .img_m{max-width: 320px; display: none;}
 
+    
 @media(max-width: 480px){
 
      .mail #section6{padding: 60px 0;}
      .mail #section6 .check{display: block; padding: 0; width: 261px; height: 50px; line-height: 50px; font-size: 18px; margin: 0 auto; text-align: center;}
+     .mail #section6 .img_box{margin-bottom: 46px;}
     
 }
 
-@media(max-width: 375px){
+@media(max-width: 360px){
 
+    .mail #section6 .com_tit{margin-bottom: 19px;}
     .mail #section6 .check{display: block; padding: 0; width: 245px; height: 40px; line-height: 40px; font-size: 16px; margin: 0 auto; text-align: center;}
+    .mail #section6 .img_pc{display: none;}
+    .mail #section6 .img_box .img_m{display: block;}
    
 }
 
