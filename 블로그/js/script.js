@@ -27,5 +27,34 @@ $(function () {
         }
     });
 
+    /* 블로그 상세 */
+    var ww = $(window).width();
+    var mySwiper = undefined;
+    
+    function initSwiper() {
+    
+      if (ww < 769 && mySwiper == undefined) {
+        mySwiper = new Swiper(".blog_wrap .blog_detail_wrap .blog_new_content .swiper-container", {
+          slidesPerView: 'auto',
+          simulateTouch: true,
+          loop: true,
+          autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+          },
+        });
+      } else if (ww >= 769 && mySwiper != undefined) {
+        mySwiper.destroy();
+        mySwiper = undefined;
+      }
+    }
+    
+    initSwiper();
+    
+    $(window).on('resize', function () {
+      ww = $(window).width();
+      initSwiper();
+    });
+
 
 });
