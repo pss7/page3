@@ -92,6 +92,32 @@ $(function () {
         return false;
     });
 
+    /* 이용약관 */
+    $('.com_text_wrap.st .text_box > a').click(function () {
+        if ($(this).hasClass('active')) {
+            $(this).removeClass('active');
+            $('.com_text_wrap.st .text_box .text').slideUp();
+        } else {
+            $(this).addClass('active');
+            $('.com_text_wrap.st .text_box .text').slideDown();
+        }
+        return false;
+    });
+    $('.terms_content').hide();
+    $('.terms_content').first().show();
+    $('.com_text_wrap.st .com_tab1 li').click(function(){
+        $('.com_text_wrap.st .com_tab1 li a').removeClass('active');
+        $(this).children().addClass('active');
+
+        var Idx = $(this).index();
+
+        $('.terms_content').hide();
+        $('.terms_content').eq(Idx).show();
+
+        
+
+
+    });
 
 
 
