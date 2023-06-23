@@ -421,7 +421,57 @@ width: 4px;  height: 24px; background: url("data:image/svg+xml,%3Csvg width='24'
 
 }
 
+/* 해지 완료 */
+#mypage_wrap .complete_wrap{max-width: 375px; margin: 0 auto;}
+#mypage_wrap .complete_wrap h2{margin-bottom: 16px; font-size: 32px; font-weight: 700; color: #fff; line-height: 1.3;}
+#mypage_wrap .complete_wrap h2 strong{color: #3DF1EA;}
+#mypage_wrap .complete_wrap p{color: #fff; }
+#mypage_wrap .complete_wrap span{font-weight: 700;}
+#mypage_wrap .complete_wrap strong{color: #3DF1EA;}
+#mypage_wrap .complete_wrap .complete_btn a{margin-bottom: 8px; display: block; border-radius: 1px; padding: 15px 10px; font-size: 17px; font-weight: 600; text-align: center;}
+#mypage_wrap .complete_wrap .complete_btn a:nth-child(1){background-color: #fff; color: #000;}
+#mypage_wrap .complete_wrap .complete_btn a:nth-child(2){background-color: #000; color: #fff;}
+#mypage_wrap .complete_wrap .box{padding: 24px 16px 0; margin: -24px 0 0; position: relative; height: 733px; margin-bottom: -50px; background: url(../images/bg.jpg)no-repeat; }
+#mypage_wrap .complete_wrap .box .complete_btn{position: absolute; bottom: 6px; left:16px; right:16px;}
+
+
+
+@media (max-width: 375px){
+
+    #mypage_wrap .complete_wrap .box{padding: 24px 0 0; position: relative; background:none; z-index: 1;}
+    #mypage_wrap .complete_wrap .box::after{content: ''; position: absolute; top:0; left: -16px; right:-16px; bottom: 0; 
+    background: url(../images/bg.jpg)no-repeat; z-index: -1;} 
+
+
+}
+
+
+
+
+
+
+
+
 /* 멤버십 인증 완료 */
+.certification_list{width: 248px; margin: 0 auto; position: relative; margin-bottom: 32px; display: flex; justify-content: center; gap: 0 34px; overflow: hidden;}
+
+.certification_list::after{content: ''; position: absolute; top:32px; left:0; right:0; border: 1px dashed #D1D5D9; z-index: -1;}
+.certification_list li{text-align: center;}
+.certification_list li em{position: relative; margin-bottom: 8px; display: block; width: 60px; height: 60px; border-radius: 50px; background-color: #40474D;}
+.certification_list li em::after{content: ''; position: absolute; top:50%; left: 50%; transform: translate(-50%, -50%);}
+.certification_list li em.icon1::after{
+    width: 24px; height: 24px;
+    background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0_2517_63230)'%3E%3Cmask id='path-1-inside-1_2517_63230' fill='white'%3E%3Crect x='3' y='1' width='18' height='22' rx='0.6'/%3E%3C/mask%3E%3Crect x='3' y='1' width='18' height='22' rx='0.6' stroke='white' stroke-width='3.2' mask='url(%23path-1-inside-1_2517_63230)'/%3E%3Cpath d='M16 7H8' stroke='white' stroke-width='1.6' stroke-linecap='round'/%3E%3Cpath d='M16 10H8' stroke='white' stroke-width='1.6' stroke-linecap='round'/%3E%3Cpath d='M12 13H8' stroke='white' stroke-width='1.6' stroke-linecap='round'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_2517_63230'%3E%3Crect width='24' height='24' fill='white'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A");
+}
+.certification_list li em.icon2::after{
+    width: 24px; height: 24px;
+    background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0_2517_62611)'%3E%3Cpath d='M21 22H3' stroke='white' stroke-width='1.6' stroke-linecap='round'/%3E%3Cpath d='M16.5355 8.53553L13 5' stroke='white' stroke-width='1.6'/%3E%3Cpath d='M4.3923 13.7895L15.4365 2.74526L19.2549 6.56361L8.21064 17.6079L4.55027 17.4499L4.3923 13.7895Z' stroke='white' stroke-width='1.6'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_2517_62611'%3E%3Crect width='24' height='24' fill='white'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A");
+}
+.certification_list li em.icon3::after{
+    width: 24px; height: 24px;
+    background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0_2517_63741)'%3E%3Cpath d='M10.5 6H3V21H18V13.5' stroke='white' stroke-width='1.6' stroke-linecap='round'/%3E%3Cpath d='M7 10.7782L11.5104 15.2886L19.2886 7.51042' stroke='white' stroke-width='1.6' stroke-linecap='round'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_2517_63741'%3E%3Crect width='24' height='24' fill='white'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A");
+}
+.certification_list li span{font-size: 14px; color: #424242; line-height: 26px;}
 #mypage_wrap .verification_completed_wrap .download_box span{margin-bottom: 16px; display: block; font-size: 16px; font-weight: 700; color: #737373; text-align: center;}
 #mypage_wrap .verification_completed_wrap .download_box .download_link{display: flex; gap: 0 16px; justify-content: center;}
 #mypage_wrap .verification_completed_wrap .download_box .download_link li a{display: block;}
@@ -563,6 +613,35 @@ width: 4px;  height: 24px; background: url("data:image/svg+xml,%3Csvg width='24'
     #mypage_wrap .usage_history_wrap .com_btn3{display: none;}
     .com_history_wrap{margin: 0; padding: 13px 0;}
     .com_btn3{margin-bottom: 50px;}
+
+}
+
+
+/* 해지 예약 */
+.cancellation_reservation h2{margin-bottom: 12px; font-size: 24px; font-weight: 700; color: #000; line-height: 1.3;}
+.cancellation_reservation span{display: block; margin-bottom: 24px; font-size: 16px; line-height: 1.2; font-weight: 700; color: #000;}
+.cancellation_reservation span strong{color: #36B6B0;}
+.cancellation_reservation .reservation_info{padding: 18px; border: 1px solid #E6E8EB; border-radius: 8px;}
+.cancellation_reservation .reservation_info dl{margin-bottom: 8px; display: flex; align-items: center; justify-content: space-between; line-height: 1.2;}
+.cancellation_reservation .reservation_info dl:last-child{margin-bottom: 0;}
+.cancellation_reservation .reservation_info dt{color: #737373; font-size: 14px;}
+.cancellation_reservation .reservation_info dd{color: #000; font-size: 14px;}
+.cancellation_reservation .com_btn2{position: fixed; left:16px; right:16px; bottom: 10px; max-width: 488px;}
+.cancellation_reservation .com_check_box {max-width: 488px; margin: 0 auto; position: fixed; left:0; right:0; bottom: 100px;}
+.cancellation_reservation .com_check_box label{text-decoration: underline;}
+.cancellation_reservation .com_list1{margin-top: 10px;}
+.cancellation_reservation .com_list1 li{position: relative; padding-left: 12px; font-size: 14px; color:#737373; line-height: 1.7;}
+.cancellation_reservation .com_list1 li strong{color: #000;}
+.cancellation_reservation .com_list1 li::before{content: ''; position: absolute; top:10px; left:0; width: 3px; height: 3px; border-radius: 50px; background-color: #737373;}
+
+
+
+
+
+@media (max-width: 1024px){
+
+    .cancellation_reservation .com_check_box{margin: 0; left: 16px; right: 16px;}
+    .cancellation_reservation .com_btn2{max-width: none;}
 
 }
 
