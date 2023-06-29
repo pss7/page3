@@ -65,82 +65,97 @@
 
         </header>
         <!-- //header -->
-
         <main>
             <div id="mypage_wrap">
                 <div class="my_page my_page2">
-                    <div class="email_change_wrap membership_wrap">
+                    <div class="membership_wrap st">
                         <div class="tit">
                             <button class="prev"><span class="blind">이전버튼</span></button>
                             <h1>
-                                멤버십 인증
+                                멤버십
                             </h1>
                         </div>
                         <!-- //tit -->
 
-                        <div class="input_text_box">
-                            <label for="mail">
-                                이메일
-                            </label>
-                            <input id="mail" type="text" placeholder="sp.kim@sparkplus.co">
-                            <a href="#">
-                                인증하기
-                            </a>
-                        </div>
-                        <!-- //box -->
+                        <h2>
+                            멤버십을 인증하고 <br>
+                            이용을 시작하세요
+                        </h2>
 
-                        <!-- 이메일 형식 불일치
-                        <div class="input_text_box error">
-                            <label for="mail">
-                                이메일
-                            </label>
-                            <input id="mail" type="text" placeholder="sp.kim@sparkplus.co">
-                            <a href="#">
-                                인증하기
-                            </a>
-                            <p>
-                                이메일 형식 불일치
+                        <a href="#" class="com_btn2">인증하기</a>
+
+                        <div class="certification_box">
+                            <p class="certification_info">
+                                이용가능한 멤버십이 없다면? <br>
+                                <strong> 멤버십을 구매해주세요. </strong>
                             </p>
+                            <ul class="membership_list2">
+                                <li>
+                                    <a href="#">
+                                        <div class="img"
+                                            style="background: url(../images/my/img01.jpg)no-repeat center; background-size: cover;">
+                                            <span class="event">
+                                                이벤트
+                                            </span>
+                                        </div>
+                                        <div class="text">
+                                            <h3>
+                                                커스텀 오피스
+                                            </h3>
+                                            <p>
+                                                기업 맞춤형 사옥구축
+                                            </p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="img"
+                                            style="background: url(../images/my/img01.jpg)no-repeat center; background-size: cover;">
+                                            <span class="event">
+                                                이벤트
+                                            </span>
+                                        </div>
+                                        <div class="text">
+                                            <h3>
+                                                커스텀 오피스
+                                            </h3>
+                                            <p>
+                                                기업 맞춤형 사옥구축
+                                            </p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="img"
+                                            style="background: url(../images/my/img01.jpg)no-repeat center; background-size: cover;">
+                                            <span class="event">
+                                                이벤트
+                                            </span>
+                                        </div>
+                                        <div class="text">
+                                            <h3>
+                                                커스텀 오피스
+                                            </h3>
+                                            <p>
+                                                기업 맞춤형 사옥구축
+                                            </p>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
                         </div>
-                        //box -->
-
-                        <div class="input_text_box">
-                            <label for="number">
-                                인증번호
-                            </label>
-                            <div class="number_box">
-                                <input id="number" type="text" placeholder="123456">
-                                <span>
-                                    09:58
-                                </span>
-                            </div>
-                            <a href="#">
-                                재발송
-                            </a>
-                        </div>
-                        <!-- //box -->
-
-                        <a href="#" class="com_btn2 disabled">변경하기</a>
-
-                        <!-- 인증번호 실패
-                        <div class="no_box">
-                            <p>
-                                <span>    
-                              올바르지 않은 인증번호입니다. <br>
-                                인증을 다시 시도해주세요.
-                                </span>    
-                            </p>
-                        </div>
-                    -->
+                        <!-- //certification_box -->
 
                     </div>
-                    <!-- //email_change_wrap -->
+                    <!-- //secession_wrap -->
 
                 </div>
-                <!-- //mypage_wrap -->
+                <!-- //my_page2 -->
 
             </div>
-            <!-- //my_page2 -->
+            <!-- //mypage_wrap -->
 
         </main>
         <!-- //main -->
@@ -148,7 +163,20 @@
     </div>
     <!-- //wrap -->
 
-    <!-- 멤버십 인증 팝업1 -->
+    <!-- 인증번호 발송 제한 -->
+    <div class="popup">
+        <h2>
+            인증번호 발송 제한
+        </h2>
+        <p>
+            발송 횟수 5번을 초과하셨습니다. <br>
+            다시 시도해주세요. <br>
+            고객문의 : 02-0000-0000
+        </p>
+        <a href="#" class="com_btn2">확인</a>
+    </div>
+
+    <!-- 멤버십 인증 실패 -->
     <div class="popup">
         <h2>
             멤버십 인증 실패
@@ -159,13 +187,13 @@
         <a href="#" class="com_btn2">확인</a>
     </div>
 
-    <!-- 멤버십 인증 팝업2 -->
+    <!-- 멤버십 인증 실패 -->
     <div class="popup">
         <h2>
             멤버십 인증 실패
         </h2>
         <p>
-            멤버십 인원이 모두 찼습니다.
+            멤버십 인원이 초과되었습니다.
         </p>
         <a href="#" class="com_btn2">확인</a>
     </div>
