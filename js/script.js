@@ -47,6 +47,13 @@ $(function () {
             $(this).next().slideDown();
         }
     });
+    $('.com_select_box .com_select .view li a').click(function () {
+        if ($(this).hasClass('active')) {
+            $(this).removeClass('active');
+        } else {
+            $(this).addClass('active');
+        }
+    });
 
     /* 결제수단 변경 */
     $('.payment_method_list li a').click(function () {
@@ -105,7 +112,7 @@ $(function () {
     });
     $('.terms_content').hide();
     $('.terms_content').first().show();
-    $('.com_text_wrap.st .com_tab1 li').click(function(){
+    $('.com_text_wrap.st .com_tab1 li').click(function () {
         $('.com_text_wrap.st .com_tab1 li a').removeClass('active');
         $(this).children().addClass('active');
 
@@ -114,7 +121,7 @@ $(function () {
         $('.terms_content').hide();
         $('.terms_content').eq(Idx).show();
 
-        
+
 
 
     });
